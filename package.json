@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "dev": "tsx watch src/app.ts",
+  "build": "tsc",
+  "start": "node dist/app.js"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Merlenajose893/Library-management-system-backend.git"
@@ -13,7 +15,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/Merlenajose893/Library-management-system-backend/issues"
   },
@@ -25,6 +27,7 @@
     "@types/express": "^5.0.6",
     "@types/node": "^26.1.2",
     "ts-node-dev": "^2.0.0",
+    "tsx": "^4.23.9",
     "typescript": "^7.0.2"
   }
 }
