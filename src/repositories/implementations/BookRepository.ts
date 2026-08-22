@@ -23,4 +23,7 @@ export class BookRepository implements IBookRepository{
         return this.bookModel.findByIdAndDelete(id)
     }
 
+    findByTitle(title:string): Promise<IBook | null> {
+       return this.bookModel.findOne({title}) 
+    }
 }
