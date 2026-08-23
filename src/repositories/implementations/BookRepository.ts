@@ -1,7 +1,7 @@
 import type { CreateBookDTO, UpdateBookDTO } from "../../dto/Book.dto.js";
 import type { IBook } from "../../models/Books.js";
 import type { IBookRepository } from "../interfaces/IBookRepository.js";
-
+import { Model } from "mongoose";
 export class BookRepository implements IBookRepository{
     constructor(private bookModel:Model<IBook>)
     {
